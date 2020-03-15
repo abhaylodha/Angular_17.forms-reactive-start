@@ -1,6 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <button class="btn btn-default" (click)="onPopulateValues()">Populate Defaults</button>
+      <button class="btn btn-default" (click)="onSuggestUserName()">Suggest User Name</button>
       <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
         <div formGroupName="frm_UserCredentials">
           <div class="form-group">
